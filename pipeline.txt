@@ -1,0 +1,24 @@
+第一步：整理原始回答数据
+第二步：清洗动物词汇
+第三步：计算 openness z 分数并分 low / moderate / high
+第四步：复现行为结果：回答数、unique responses、cat/dog早期反应、association slope
+第五步：构建每组 被试 × 词 矩阵
+第六步：计算词与词 Pearson 相关矩阵
+第七步：PMFG 过滤，得到无向无权语义网络
+第八步：计算 CC、ASPL、Q、D、S
+第九步：1000次 bootstrap partial network
+第十步：ANOVA + Tukey HSD
+第十一步：画网络图、association slope 图、bootstrap箱线图
+第十二步：最后对照原文结果，主要看这些结果能不能对上
+| 结果类型                   | 原文趋势                         |
+| ---------------------- | ---------------------------- |
+| 平均回答数                  | high openness 更多             |
+| unique responses       | high openness 更多             |
+| early common responses | high openness 更少从 cat/dog 开始 |
+| association slope      | high openness 更平             |
+| ASPL                   | high openness 更低             |
+| Q modularity           | high openness 更低             |
+| D diameter             | high openness 更低             |
+| S small-worldness      | high openness 数值更高或边缘显著      |
+| CC                     | 结果比较复杂，moderate 组可能更高        |
+文章结果里，bootstrap partial network 更符合假设：开放性越高，ASPL、Q、D 越低，S 趋向更高；也就是语义结构更灵活、更互联。
